@@ -9,28 +9,34 @@ jobs:
   run:
     runs-on: ubuntu-latest
     steps:
+      # Step 1: Checkout repo
       - name: Checkout
         uses: actions/checkout@v3
         with:
           persist-credentials: true
 
+      # Step 2: Setup Node.js
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
           node-version: '20'
 
+      # Step 3: Install dependencies (works on GitHub.com)
       - name: Install deps
-        run: npm ci
+        run: npm install
 
+      # Step 4: Run TSR notifier script
       - name: Run TSR notifier
         env:
           DISCORD_TSR_WEBHOOK_URL: ${{ secrets.DISCORD_TSR_WEBHOOK_URL }}
         run: node tsr_notifier.js
 
+      # Step 5: Configure Git remote for push
       - name: Configure remote with token
         run: |
           git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
 
+      # Step 6: Commit & push updated JSON files
       - name: Commit & Push changes
         run: |
           git config user.name "github-actions"
