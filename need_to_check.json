@@ -5,5 +5,23 @@
     "status": 302,
     "reason": "redirect",
     "when": "2025-09-21T06:07:41.938Z"
+  },
+  {
+    "name": "IzzieMcFire",
+    "url": "https://www.thesimsresource.com/members/IzzieMcFire/downloads/browse/category/sims4/skipsetitems/1",
+    "reason": "network error",
+    "when": "2025-10-16T06:34:50.561Z"
+  },
+  {
+    "name": "PlayersWonderland",
+    "url": "https://www.thesimsresource.com/members/PlayersWonderland/downloads/browse/category/sims4/skipsetitems/1",
+    "reason": "network error",
+    "when": "2025-10-16T06:35:20.261Z"
+  },
+  {
+    "name": "Suzue",
+    "url": "https://www.thesimsresource.com/members/Suzue/downloads/browse/category/sims4/skipsetitems/1",
+    "reason": "network error",
+    "when": "2025-10-16T06:35:45.547Z"
   }
 ]
