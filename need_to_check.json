@@ -190,5 +190,11 @@
     "status": 503,
     "reason": "http error",
     "when": "2025-10-20T16:32:47.700Z"
+  },
+  {
+    "name": "Onyxium",
+    "url": "https://www.thesimsresource.com/artists/Onyxium/downloads/browse/category/sims4/skipsetitems/1",
+    "reason": "network error",
+    "when": "2025-10-20T18:35:12.463Z"
   }
 ]
